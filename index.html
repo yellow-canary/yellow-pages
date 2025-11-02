@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Mesh Catalog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root { /* Light Mode */
+        --color-primary: 255 251 235; /* #FFFBEB */
+        --color-secondary: 255 255 255;
+        --color-accent: 88 166 255;
+        --color-muted: 107 114 128;
+        --color-border: 229 231 235;
+        --color-text: 31 41 55; /* Dark gray for text */
+      }
+      .dark { /* Dark Mode */
+        --color-primary: 13 17 23;
+        --color-secondary: 22 27 34;
+        --color-accent: 88 166 255;
+        --color-muted: 139 148 158;
+        --color-border: 48 54 61;
+        --color-text: 229 231 235; /* Light gray for text */
+      }
+      body {
+        background-color: rgb(var(--color-primary));
+        color: rgb(var(--color-text));
+        transition: background-color 0.2s, color 0.2s;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': 'rgb(var(--color-primary))',
+              'secondary': 'rgb(var(--color-secondary))',
+              'accent': 'rgb(var(--color-accent))',
+              'muted': 'rgb(var(--color-muted))',
+              'border': 'rgb(var(--color-border))',
+              'text-main': 'rgb(var(--color-text))',
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-primary">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

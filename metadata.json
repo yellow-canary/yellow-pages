@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Service Yellow Pages",
+  "description": "A web application to serve as a catalog for application services in a service mesh environment. Users can register, join teams, and manage services. Admins have extended privileges to manage users and teams.",
+  "requestFramePermissions": []
+}
